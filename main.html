@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Veronika Myroshnychenko">
+    <meta name="keywords" content="Mexican food, restaurant, food delivery">
+    <title>Mexican Food Delivery</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+    <title>Image Animation</title>
+    <title>Image Rotation</title>
+    <style>
+        .content-left {
+            position: relative;
+        }
+
+        .image-container {
+            position: absolute;
+            top: -20%;
+            right: 0;
+            transform: translate(150%, 0);
+        }
+
+            .image-container img {
+                width: 300px;
+                height: auto;
+                animation: rotate 10s linear infinite;
+            }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="menu">
+        <div class="nav">
+            <div class="logo"><h1>Food<b>io</b> </h1> </div>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href=".\menu.html">Menu</a></li>
+                <li><a href=".\about.html">About Us</a></li>
+                <li><a href=".\contact.html">Contact</a></li>
+            </ul>
+
+            <div>
+                <input class="signin" type="submit" value="Sign In" name="signin">
+                <input class="signup" type="submit" value="Sign Up" name="signup">
+            </div>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="content">
+            <div class="content-left">
+                <div class=" info">
+                    <h2>Order Your Best<br>Food anytime </h2>
+                    <p>
+                        Hey, Our delicious food is waitig for you, <br>
+                        We are always near to you with fresh item of food
+                    </p>
+                </div>
+               
+                <a href="menu.html" class="button-link">Explore Food</a>
+
+
+                <div class="content-right">
+                    <div class="image-container">
+                        <img src="taco1.jpg" alt="Rotating Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+     <div class="table">
+         <div class="table-header">
+             <div class="table-cell">Our Popular Dishes</div>
+             <div class="table-cell">Price</div>
+         </div>
+         <div class="table-row">
+             <div class="table-cell">Tacos</div>
+             <div class="table-cell">With chillie/guacamole/salsa</div>
+             <div class="table-cell">$6.99</div>
+         </div>
+         <div class="table-row">
+             <div class="table-cell">Nachos</div>
+             <div class="table-cell">Meet/Fish/Bean</div>
+             <div class="table-cell">$7.99/$8.99/$6.99</div>
+         </div>
+         <div class="table-row">
+             <div class="table-cell">Burrito</div>
+             <div class="table-cell">Meet and rice/Ham and cheese/Bean and avocado</div>
+             <div class="table-cell">$7.99/$8.99/$6.99</div>
+         </div>
+     </div>
+ </section>
+    <section class="visit-locations">
+        <h3>Visit Us At These Locations</h3>
+        <ul>
+            <li>123 Main Street, City, Country</li>
+            <li>456 Elm Avenue, Town, Country</li>
+            <li>789 Oak Lane, Village, Country</li>
+        </ul>
+    </section>
+    <footer>
+        <section class="author-info">
+            <p>This page was created by Veronika Myroshnychenko in 2023.</p>
+            <p>Contact the author: <a href="mailto:akinnorev46@gmail.com">akinnorev46@gmail.com</a></p>
+        </section>
+    </footer>
+
+
+
+</body>
+</html>

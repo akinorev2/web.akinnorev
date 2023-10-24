@@ -1,0 +1,67 @@
+﻿@import url('StyleSheet1.css');
+* {
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", "Poppins", sans-serif;
+}
+
+body {
+    background: bisque;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.menu {
+    font-size: 14px;
+    color: black;
+}
+
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+    color: #333;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dish, .price {
+    width: 48%; 
+}
+
+.menu-item h3 {
+    margin: 0;
+}
+
+.menu-item p.price {
+    font-weight: bold;
+}
+
+.menu-item-desc {
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        font-size: 16px;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
